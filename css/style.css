@@ -1,0 +1,364 @@
+@charset 'UTF-8';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header,h1,h2{
+    font-family: impact, sans-serif;
+}
+
+.wrapper {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.sub_title{
+    font-size: 4rem;
+}
+
+
+header{
+    background-color: #333;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+}
+
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.btn-menu{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    display: none;
+}
+
+.main-nav{
+    display: flex;
+}
+
+.main-nav li{
+    margin-left: 1.5rem;
+}
+
+#hero{
+    background-color: #4db1ec;
+    background-image: url(../images/pexels-pixabay-461064.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: screen;
+    animation: bg-color 24s infinite;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
+}
+
+@keyframes bg-color{
+    0%{
+        background-color: #4db1ec;
+    }
+    12.5%{
+        background-color: blue;
+    }
+    25%{
+        background-color: purple;
+    }
+    37.5%{
+        background-color: pink;
+    }
+    50%{
+        background-color: orange;
+    }
+    62.5%{
+        background-color: yellow;
+    }
+    75%{
+        background-color: lightgreen;
+    }
+    87.5%{
+        background-color: green;
+    }
+    100%{
+        background-color: #4db1ec;
+    }
+}
+
+#hero h1{
+    padding-bottom: 1rem;
+    font-size: 5.5rem;
+    text-align: center;
+}
+
+#hero p:first-of-type{
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+#hero p:last-of-type{
+    padding-top: 2rem;
+    line-height: 2rem;
+}
+
+#about{
+    margin-top: 80px;
+    text-align: center;
+}
+
+#about .sub_title{
+    background: linear-gradient(rgb(243, 217, 169),rgb(239, 177, 63));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+    
+
+#about p{
+    margin: 50px 0 30px;
+    line-height: 2rem;
+    text-align: left;
+}
+
+#about img{
+    width: 100%;
+}
+
+#news{
+    background-image: linear-gradient(rgb(187, 240, 187),rgb(20, 73, 63));
+    padding: 7rem 0;
+    margin-top: 80px;
+    text-align: center;
+    color: #fff;
+    clip-path: polygon(0 0,100% 10%,100% 90%, 0 100%);
+}
+
+.news-table{
+    margin-top: 50px;
+}
+
+#news tr{
+    border-bottom: 1px solid #fff;
+}
+
+#news td:first-of-type{
+    padding: 20px 0 20px 10px;
+    width: 20%;
+    text-align: left;
+}
+
+#news td:last-of-type{
+    padding: 20px 0 20px 10px;
+    width: 58%;
+    text-align: left;
+}
+
+#speakers{
+    margin-top: 80px;
+    text-align: center;
+}
+
+#speakers .sub_title{
+    background: linear-gradient(rgb(105, 105, 235),rgb(42, 42, 240));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.speakers_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.speakers_flex +.speakers_flex{
+    margin-top: 50px;
+} 
+
+.speakers-pic{
+    width: 20%;
+    height: 150px;
+}
+
+.speakers-pic img{
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.speakers-txt{
+    width: 75%;
+    text-align: left;
+}
+
+.speakers-txt .name{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.speakers-txt p + p{
+    line-height: 1.5rem;
+}
+
+#ticket{
+    box-sizing: border-box;
+    background-image: linear-gradient(rgb(239, 201, 207),rgb(230, 126, 211));
+    padding: 7rem 0 4rem;
+    margin-top: 80px;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    clip-path: polygon(0 0,100% 10%,100% 100%,0 100%);
+}
+
+form{
+    max-width: 500px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#ticket label{
+    display: inline-block;
+    margin-top: 40px;
+}
+
+#ticket input{
+    display: block;
+    padding: 10px 0 10px 10px;
+    margin: 0 auto;
+    width: 500px;
+    border: 1px solid #fff;
+    background-color: rgb(242, 239, 239);
+}
+
+#ticket button{
+    padding: 15px 0;
+    margin: 30px 0 80px;
+    width: 500px;
+    background-color: #333;
+    transition: all .3s;
+}
+
+#ticket button:hover{
+    background-color: rgb(41, 41, 235);
+}
+
+footer{
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 30px;
+    border-top: 1px solid #fff;
+}
+
+footer a{
+    text-decoration: underline;
+}
+
+@media(max-width:600px){
+
+    .btn-menu{
+        display: block;
+        z-index: 2;
+    }
+
+    .btn-menu.open{
+        font-size: 0;
+    }
+
+    .btn-menu.open::before{
+        content: "Close";
+        font-size: 16px;
+    }
+
+    .sub_title{
+        font-size: 3rem;
+    }
+
+    .main-nav{
+        box-sizing: border-box;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vw;
+        height: 50vh;
+        background-color: #333;
+        opacity: .9;
+    }
+
+    .main-nav li{
+        margin-top: 50px;
+        margin-left: 45%;
+    }
+
+    #hero h1{
+        font-size: 3.5rem;
+    }
+
+    #hero p:first-of-type{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    #news tr{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #news td:first-of-type{
+        padding: 20px 0 0 10px;
+        width: 100%;
+    }
+    
+    #news td:last-of-type{
+        padding: 10px 0 20px 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+    form{
+        max-width: 400px;
+    }
+
+    #ticket input{
+        width: 400px;
+    }
+
+    #ticket button{
+        width: 400px;
+    }
+    footer{
+        max-width: 400px;
+        margin: 0 auto;
+        padding-top: 30px;
+        border-top: 1px solid #fff;
+    }
+
+
+    
+}
