@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Kato Conference</title>
+        <meta name="description" content="オンラインで行っているWebサイト制作の勉強会">
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+	<body>
+        <header>
+            <div class="wrapper">
+                <a href="#hero" class="logo">KATO Conference</a>
+                <nav>
+                    <button class="btn-menu">Menu</button>
+                    <ul class="main-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#speakers">Speakers</a></li>
+                        <li><a href="#ticket">Ticket</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="hero">
+            <div class="wrapper">
+                <h1>KATO Conference</h1>
+                <p class="hero-date">2022.11.7.14:00-16:00</p>
+                <p>
+                  オンラインで行っているWebサイト制作の勉強会、KATO Conference。 今回は最新のCSSテクニックとデザイントレンドを中心に紹介します。 参加料金は無料！お気軽にご参加ください。
+                </p>
+            </div>
+        </section>
+
+        <section id="about" class="wrapper">
+            <h2 class="sub_title">About</h2>
+            <p>
+               KATO Conferenceとは、Webサイト制作を学びたい人たちが集まる勉強会です。 オンラインで開催しているので、世界中どこにいても参加できます。 最新のWebサイト制作やデザイントレンドを紹介し、それらの知識について参加者が話し合う時間も設けています。 一人で勉強を続けるだけでなく、仲間と交流しながら新しい可能性を一緒に探していきましょう。 
+            </p>
+            <img src="images/pexels-pixabay-38568.jpg" alt="パソコン">
+        </section>
+
+        <section id="news">
+            <div class="wrapper">
+                <h2 class="sub_title">News</h2>
+                <table class="news-table">
+                    <tr>
+                        <td class="news-date">2020年10月16日</td>
+                        <td class="news-content">参加登録を開始しました。</td>
+                    </tr>
+                    <tr>
+                        <td class="news-date">2021年10月10日</td>
+                        <td class="news-content">KATO Conferenceの登壇者が決定しました</td>
+                    </tr>
+                    <tr>
+                        <td class="news-date">2021年10月2日</td>
+                        <td class="news-content">KATO ConferenceのWebサイトをリニューアルしました</td>
+                    </tr>
+                    <tr>
+                        <td class="news-date">2021年9月28日</td>
+                        <td class="news-content">	KATO Conference開催決定!</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="speakers" class="wrapper">
+            <h2 class="sub_title">Speakers</h2>
+            <div class="speakers_flex">
+                <div class="speakers-pic">
+                    <img src="images/character_boy_normal.png" alt="加藤">
+                </div>
+                <div class="speakers-txt">
+                    <p class="name">KATO</p>
+                    <p>
+                        auショップで約9年間働いていました。WEB業界で働いたことのない素人です。
+                        1、2年前からHTML&CSSの勉強を始めました。皆さんと同じ素人です。一緒に頑張りましょう。
+                    </p>
+                </div>
+            </div>
+            <div class="speakers_flex">
+                <div class="speakers-pic">
+                    <img src="images/character_boy_normal.png" alt="加藤">
+                </div>
+                <div class="speakers-txt">
+                    <p class="name">DAIKI</p>
+                    <p>
+                        小学生から野球だけやってきた野球小僧です。
+                        パソコンもエクセルやワードぐらいしか利用出来ませんでした。
+                        そんな素人の私でもある程度マークアップ言語は分かるようになりました。
+                        一緒に頑張りましょう。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ticket">
+            <h2 class="sub_title">Ticket</h2>
+            <form action="">
+                <label for="">
+                    Name<input type="text" placeholder="例:加藤 大貴">
+                </label>
+                <label for="">
+                    Email<input type="email" placeholder="例:hello@example.com">
+                </label>
+                <button>Join Now!</button>
+            </form>
+            <footer>
+                <a href="">お問い合わせ</a>
+                <small>&copy; 2021 KATO Conference</small>
+            </footer>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script>
+            $(function(){
+              $('.btn-menu').click(function(){
+                $(this).toggleClass('open')
+                $('.main-nav').slideToggle();
+              });
+            });
+        </script>
+	</body>
+</html>
